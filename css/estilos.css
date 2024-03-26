@@ -1,0 +1,218 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/*estilos de header*/
+
+header{
+    padding: 10px 0px; /*espacio entre el contenido del elemento y su borde*/
+    display: flex; /*alineación cajas*/
+    margin: 4%; /*margen entre header y main*/
+}
+
+header img {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8)); /*sombra logo*/
+    width: 10%; /*tamaño logo, ancho de un elemento*/
+    border-radius: 100%; /*borde de logo*/
+
+}
+
+header nav ul {
+    gap: 12px; /*espacio entre los elementos flexibles del menú hamburguesa*/
+    cursor: pointer; /*puntero del ratón*/
+}
+.navbar-toggler { /*menú hamburguesa*/
+    background-color:grey; /*color icono menú hamburguesa*/
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8)); /*sombra ícono menú hamburguesa*/
+}
+
+/*BODYS*/
+
+body {
+    margin: 0; /*margenes*/
+    background-image: url(https://www.imagui.com/i/depositphotos40857847-28065430.webp); /*imagen de fondo*/
+    background-size: 50%; /*tamaño imagen de fondo*/
+}
+body main div img{
+    width: 50%; /*ancho de un elemento, imagenes de home, galeria*/
+}
+.section-index{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.section-galeria{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+body main .section-galeria div img{
+    width: 85%
+}
+body main .section-galeria div p{
+    font-size:x-small;
+}
+
+
+
+/*rutas de especificidad*/
+/*HEADERS*/
+
+/*propiedades de menú*/
+header nav ul li {
+    height: 25px; /*altura de un elemento*/
+}
+
+a:visited{ /*enlace visitado*/
+    color:blanchedalmond; /*color letra*/
+}
+
+a:hover{ /*pasar cursor por encima*/
+    background-color:dimgray; /*color de fondo*/
+    border-radius: 5px; /*bordes redondeados*/
+}
+
+/*MAINS*/
+main{
+    margin: 1rem;
+}
+main section {
+    text-align: center; /*alineación de imagenes*/
+}
+/*titulo h1*/
+main h1{
+    text-align: center; /*alineación*/
+    font-family:'Courier New', Courier, monospace; /*tipografía*/
+    font-weight: 400; /*grosor letra*/
+    font-size: xx-large; /*tamaño letra*/
+    color:brown; /*color letra*/
+}
+/*index y galeria*/
+section div {
+    margin: 20px; /*margen*/
+}
+/*img index, galeria*/
+section div img {
+    width: 80%; /*tamaño img, ancho de un elemento*/
+    margin: 10px; /*margen*/
+}
+/*p index, galeria, productos*/
+main p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; /*tipografía*/
+    font-style: italic; /*modifica texto*/
+    text-align: center; /*alineación texto*/
+}
+.h5{
+    text-align: center /*centrar texto*/
+}
+/*MAPA*/
+iframe {
+    width: 80%; /*tamaño, ancho de un elemento*/
+}
+
+
+/*CLASS*/
+/*class index*/
+
+.frutal {
+    text-decoration: underline; /*linea debajo texto*/
+    font-weight: 500; /*grosor letra*/
+}
+.cumple {
+    text-decoration: underline; /*linea debajo texto*/
+    font-weight: 500; /*grosor letra*/
+}
+.materas {
+    text-decoration: underline; /*linea debajo texto*/
+    font-weight: 500; /*grosor letra*/
+}
+
+/*class recetas*/
+
+/*.receta-item EN MANTENIMIENTO 
+    list-style: none; /*elimina viñetas
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*tipografía
+*/
+
+.img-pan-casero{
+    border-radius: 10px; /*bordes*/
+    width: 50%; /*tamaño, ancho*/
+}
+.img-torta-matera{
+    border-radius: 10px; /*bordes*/
+    width: 50%; /*tamaño, ancho*/
+}
+.ul-torta-matera{
+    padding: 10px 0px 20px 20px;
+}
+
+.ol-torta-matera{
+    padding: 10px 20px 20px 20px;
+}
+
+.ul-pan-casero {
+    padding: 10px 0px 20px 20px;
+}
+
+.ol-pan-casero{
+    padding: 10px 20px 20px 20px;
+}
+
+/*class productos*/
+
+.sub-prod-utilizados {
+    text-align: center; /*alineación texto*/
+    font-size: large; /*tamaño letra*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    font-style: italic;
+}
+
+/*class contacto*/
+
+.contacto {
+    text-align: center; /*alineación texto*/
+    font-size:x-large; /*tamaño de letra*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*tipografía*/
+}
+
+/*FOOTERS*/
+
+footer {
+    margin: 0px 30px 20px 30px; /*margenes*/
+    font-family: 'Times New Roman', Times, serif; /*tipografía*/
+    font-size:small; /*tamaño de letra*/
+    text-align: right; /*alineacion del texto*/
+
+}
+
+/*MQ tablet*/
+@media screen and (min-width: 600px){
+    body main .section-galeria div p{
+        font-size:small;
+    }   
+}
+
+/*MQ desktop*/
+@media screen and (min-width: 1024px){
+    .section-index{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+    main section div img{
+        width: 80vh;
+        height: 80vh;
+    }
+    .section-galeria{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    body main .section-galeria div img{
+        width: 95%
+    }
+    body main .section-galeria div p{
+        font-size:medium;
+    }
+}
