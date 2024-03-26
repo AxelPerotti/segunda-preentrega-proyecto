@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 /*estilos de header*/
@@ -18,7 +17,6 @@ header img {
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8)); /*sombra logo*/
     width: 10%; /*tamaño logo, ancho de un elemento*/
     border-radius: 100%; /*borde de logo*/
-
 }
 
 header nav ul {
@@ -40,15 +38,7 @@ body {
 body main div img{
     width: 50%; /*ancho de un elemento, imagenes de home, galeria*/
 }
-.section-index{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}
-.section-galeria{
-    display: grid;
-    grid-template-columns: 1fr;
-}
+
 body main .section-galeria div img{
     width: 85%
 }
@@ -129,6 +119,11 @@ iframe {
     text-decoration: underline; /*linea debajo texto*/
     font-weight: 500; /*grosor letra*/
 }
+.section-index{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
 
 /*class recetas*/
 
@@ -161,6 +156,12 @@ iframe {
     padding: 10px 20px 20px 20px;
 }
 
+/*class galeria*/
+.section-galeria{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 /*class productos*/
 
 .sub-prod-utilizados {
@@ -186,7 +187,6 @@ footer {
     font-family: 'Times New Roman', Times, serif; /*tipografía*/
     font-size:small; /*tamaño de letra*/
     text-align: right; /*alineacion del texto*/
-
 }
 
 /*MQ tablet*/
