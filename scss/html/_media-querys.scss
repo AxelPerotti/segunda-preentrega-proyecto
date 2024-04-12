@@ -1,0 +1,30 @@
+/*Media Querys*/
+
+/*MQ tablet*/
+@media screen and (min-width: 600px){
+    body main .section-galeria div p{
+        font-size:small;
+    }   
+}
+
+/*MQ desktop*/
+@media screen and (min-width: 1024px){
+    .section-index{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+    main section div img{
+        width: 80vh;
+        height: 80vh;
+    }
+    .section-galeria{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    body main .section-galeria div img{
+        width: 95%
+    }
+    body main .section-galeria div p{
+        font-size:medium;
+    }
+
+}

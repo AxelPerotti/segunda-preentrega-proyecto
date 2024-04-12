@@ -1,0 +1,23 @@
+/*General Styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0; /*margenes*/
+    background-image: url(https://www.imagui.com/i/depositphotos40857847-28065430.webp); /*imagen de fondo*/
+    background-size: 50%; /*tamaño imagen de fondo*/
+}
+
+@import "html/general-header";
+
+@import "html/general-main";
+
+@import "html/general-footer";
+
+@import "html/media-querys";
+
+@import "html/variables";
+
+@import "html/mixin"

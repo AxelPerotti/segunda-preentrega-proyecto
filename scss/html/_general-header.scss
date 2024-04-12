@@ -1,0 +1,50 @@
+/*Header styles*/
+
+header{
+    padding: 10px 0px; /*espacio entre el contenido del elemento y su borde*/
+    display: flex; /*alineación cajas*/
+    margin: 4%; /*margen entre header y main*/
+    nav{
+        div{
+            img{
+                filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8)); /*sombra logo*/
+                width: 10%; /*tamaño logo, ancho de un elemento*/
+                border-radius: 100%; /*borde de logo*/
+            }
+            .navbar-toggler{
+                background-color:grey; /*color icono menú hamburguesa*/
+                filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8)); /*sombra ícono menú hamburguesa*/
+            }
+            div{
+                ul{/*MENÚ PROPERTIES*/
+                    gap: 12px; /*espacio entre los elementos flexibles del menú hamburguesa*/
+                    cursor: pointer; /*puntero del ratón*/
+                    li {
+                        height: 25px; /*altura de un elemento*/
+                        a:visited{
+                            color:blanchedalmond; /*color letra*/
+                        }
+                        a:hover{ /*pasar cursor por encima*/
+                                background-color:dimgray; /*color de fondo*/
+                                border-radius: 5px; /*bordes redondeados*/                                
+                        }
+                        ul{
+                            gap: 12px; /*espacio entre los elementos flexibles del menú hamburguesa*/
+                            cursor: pointer; /*puntero del ratón*/
+                            li {
+                                height: 25px; /*altura de un elemento*/
+                                a:visited{
+                                    color:blanchedalmond; /*color letra*/
+                                }
+                                a:hover{ /*pasar cursor por encima*/
+                                        background-color:dimgray; /*color de fondo*/
+                                        border-radius: 5px; /*bordes redondeados*/                                
+                                }
+                            }
+                        }
+                        }
+                    }
+                }
+            }
+        }
+    }   

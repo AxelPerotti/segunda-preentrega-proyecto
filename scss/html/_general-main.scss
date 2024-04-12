@@ -1,0 +1,102 @@
+/*Main styles*/
+main{
+    margin: 1rem;
+    h1{/*TITLE*/
+        text-align: center; /*alineación*/
+        font-family:'Courier New', Courier, monospace; /*tipografía*/
+        font-weight: 400; /*grosor letra*/
+        font-size: xx-large; /*tamaño letra*/
+        color:brown; /*color letra*/
+    }
+    .sub-prod-utilizados { /*SUBTITLE H4 PROD*/
+        text-align: center; /*alineación texto*/
+        font-size: large; /*tamaño letra*/
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: grey;
+        font-style: italic;
+    }   
+    .img-pan-casero{ /*RECIPES*/
+        border-radius: 10px; /*bordes*/
+        width: 50%; /*tamaño, ancho*/
+    }
+    .img-torta-matera{ /*RECIPES*/
+        border-radius: 10px; /*bordes*/
+        width: 50%; /*tamaño, ancho*/
+    }
+    p { /*GALLERY,RECIPES*/
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; /*tipografía*/
+        font-style: italic; /*modifica texto*/
+        text-align: center; /*alineación texto*/
+    }
+    .ul-torta-matera{ /*DISORDERED ITEMS*/
+        padding: 10px 0px 20px 20px;
+    }
+    .ol-torta-matera{ /*ORDERED ITEMS*/
+        padding: 10px 20px 20px 20px;
+    }
+    .ul-pan-casero { /*DISORDERED ITEMS*/
+        padding: 10px 0px 20px 20px;
+    }
+    .ol-pan-casero{ /*ORDERED ITEMS*/
+        padding: 10px 20px 20px 20px;
+    }
+    iframe { /*MAP*/
+        width: 80%; /*tamaño, ancho de un elemento*/
+    }
+    .section-index{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .section-galeria{
+        display: grid;
+        grid-template-columns: 1fr;
+        div{
+            p{
+                font-size:x-small;
+            }
+            img{
+                width: 85%
+            }
+        }
+    }
+    section{
+        text-align: center; /*alineación de imagenes*/ /*CAMBIAR A ALIGN ITEMS*/
+        div{
+            margin: 20px; /*INDEX Y GALLERY*/
+            .frutal { /*CLASS INDEX*/
+                text-decoration: underline; /*linea debajo texto*/
+                font-weight: 500; /*grosor letra*/
+            }
+            .cumple { /*CLASS INDEX*/
+                text-decoration: underline; /*linea debajo texto*/
+                font-weight: 500; /*grosor letra*/
+            }
+            .materas { /*CLASS INDEX*/
+                text-decoration: underline; /*linea debajo texto*/
+                font-weight: 500; /*grosor letra*/
+            }
+            img { /*INDEX, GALLERY*/
+                width: 50%; /*ancho de un elemento*/
+                width: 80%; /*tamaño img, ancho de un elemento*/
+                margin: 10px; /*margen*/
+            }          
+        }
+    }
+    div{
+        div{
+            div{
+                div{
+                    h5{
+                        text-align: center /*centrar texto*/
+                    }
+                    div{
+                        h5{
+                            text-align: center /*centrar texto*/
+                        }
+                    }
+                }
+            }
+        }
+    }       
+}

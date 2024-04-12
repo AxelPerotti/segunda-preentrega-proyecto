@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/*General Styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; /*margenes*/
+  background-image: url(https://www.imagui.com/i/depositphotos40857847-28065430.webp); /*imagen de fondo*/
+  background-size: 50%; /*tamaño imagen de fondo*/
+}
+
+/*Header styles*/
+header {
+  padding: 10px 0px; /*espacio entre el contenido del elemento y su borde*/
+  display: flex; /*alineación cajas*/
+  margin: 4%; /*margen entre header y main*/
+}
+header nav div img {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8)); /*sombra logo*/
+  width: 10%; /*tamaño logo, ancho de un elemento*/
+  border-radius: 100%; /*borde de logo*/
+}
+header nav div .navbar-toggler {
+  background-color: grey; /*color icono menú hamburguesa*/
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8)); /*sombra ícono menú hamburguesa*/
+}
+header nav div div ul { /*MENÚ PROPERTIES*/
+  gap: 12px; /*espacio entre los elementos flexibles del menú hamburguesa*/
+  cursor: pointer; /*puntero del ratón*/
+}
+header nav div div ul li {
+  height: 25px; /*altura de un elemento*/
+}
+header nav div div ul li a:visited {
+  color: blanchedalmond; /*color letra*/
+}
+header nav div div ul li a:hover { /*pasar cursor por encima*/
+  background-color: dimgray; /*color de fondo*/
+  border-radius: 5px; /*bordes redondeados*/
+}
+header nav div div ul li ul {
+  gap: 12px; /*espacio entre los elementos flexibles del menú hamburguesa*/
+  cursor: pointer; /*puntero del ratón*/
+}
+header nav div div ul li ul li {
+  height: 25px; /*altura de un elemento*/
+}
+header nav div div ul li ul li a:visited {
+  color: blanchedalmond; /*color letra*/
+}
+header nav div div ul li ul li a:hover { /*pasar cursor por encima*/
+  background-color: dimgray; /*color de fondo*/
+  border-radius: 5px; /*bordes redondeados*/
+}
+
+/*Main styles*/
+main {
+  margin: 1rem;
+}
+main h1 { /*TITLE*/
+  text-align: center; /*alineación*/
+  font-family: "Courier New", Courier, monospace; /*tipografía*/
+  font-weight: 400; /*grosor letra*/
+  font-size: xx-large; /*tamaño letra*/
+  color: brown; /*color letra*/
+}
+main .sub-prod-utilizados { /*SUBTITLE H4 PROD*/
+  text-align: center; /*alineación texto*/
+  font-size: large; /*tamaño letra*/
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: grey;
+  font-style: italic;
+}
+main .img-pan-casero { /*RECIPES*/
+  border-radius: 10px; /*bordes*/
+  width: 50%; /*tamaño, ancho*/
+}
+main .img-torta-matera { /*RECIPES*/
+  border-radius: 10px; /*bordes*/
+  width: 50%; /*tamaño, ancho*/
+}
+main p { /*GALLERY,RECIPES*/
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /*tipografía*/
+  font-style: italic; /*modifica texto*/
+  text-align: center; /*alineación texto*/
+}
+main .ul-torta-matera { /*DISORDERED ITEMS*/
+  padding: 10px 0px 20px 20px;
+}
+main .ol-torta-matera { /*ORDERED ITEMS*/
+  padding: 10px 20px 20px 20px;
+}
+main .ul-pan-casero { /*DISORDERED ITEMS*/
+  padding: 10px 0px 20px 20px;
+}
+main .ol-pan-casero { /*ORDERED ITEMS*/
+  padding: 10px 20px 20px 20px;
+}
+main iframe { /*MAP*/
+  width: 80%; /*tamaño, ancho de un elemento*/
+}
+main .section-index {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+main .section-galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+main .section-galeria div p {
+  font-size: x-small;
+}
+main .section-galeria div img {
+  width: 85%;
+}
+main section {
+  text-align: center; /*alineación de imagenes*/ /*CAMBIAR A ALIGN ITEMS*/
+}
+main section div {
+  margin: 20px; /*INDEX Y GALLERY*/
+}
+main section div .frutal { /*CLASS INDEX*/
+  text-decoration: underline; /*linea debajo texto*/
+  font-weight: 500; /*grosor letra*/
+}
+main section div .cumple { /*CLASS INDEX*/
+  text-decoration: underline; /*linea debajo texto*/
+  font-weight: 500; /*grosor letra*/
+}
+main section div .materas { /*CLASS INDEX*/
+  text-decoration: underline; /*linea debajo texto*/
+  font-weight: 500; /*grosor letra*/
+}
+main section div img { /*INDEX, GALLERY*/
+  width: 50%; /*ancho de un elemento*/
+  width: 80%; /*tamaño img, ancho de un elemento*/
+  margin: 10px; /*margen*/
+}
+main div div div div h5 {
+  text-align: center;
+}
+main div div div div div h5 {
+  text-align: center;
+}
+
+/*Footer styles*/
+footer {
+  margin: 0px 30px 20px 30px; /*margenes*/
+  font-family: "Times New Roman", Times, serif; /*tipografía*/
+  font-size: small; /*tamaño de letra*/
+  text-align: right; /*alineacion del texto*/
+}
+
+/*Media Querys*/
+/*MQ tablet*/
+@media screen and (min-width: 600px) {
+  body main .section-galeria div p {
+    font-size: small;
+  }
+}
+/*MQ desktop*/
+@media screen and (min-width: 1024px) {
+  .section-index {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+  main section div img {
+    width: 80vh;
+    height: 80vh;
+  }
+  .section-galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  body main .section-galeria div img {
+    width: 95%;
+  }
+  body main .section-galeria div p {
+    font-size: medium;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
