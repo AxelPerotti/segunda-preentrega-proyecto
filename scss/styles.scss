@@ -10,6 +10,10 @@ body {
     background-size: 50%; /*tamaño imagen de fondo*/
 }
 
+@import "html/variables";
+
+@import "html/mixin";
+
 @import "html/general-header";
 
 @import "html/general-main";
@@ -17,7 +21,3 @@ body {
 @import "html/general-footer";
 
 @import "html/media-querys";
-
-@import "html/variables";
-
-@import "html/mixin"

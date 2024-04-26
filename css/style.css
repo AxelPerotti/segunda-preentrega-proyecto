@@ -63,7 +63,7 @@ main {
 main h1 { /*TITLE*/
   text-align: center; /*alineación*/
   font-family: "Courier New", Courier, monospace; /*tipografía*/
-  font-weight: 400; /*grosor letra*/
+  font-weight: 900; /*grosor letra*/
   font-size: xx-large; /*tamaño letra*/
   color: brown; /*color letra*/
 }
