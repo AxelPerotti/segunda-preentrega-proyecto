@@ -6,10 +6,12 @@ header{
     margin: 4%; /*margen entre header y main*/
     nav{
         div{
-            img{
+            a{
+                img{
+                width: 25%; /*tamaño logo, ancho de un elemento*/
                 filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8)); /*sombra logo*/
-                width: 10%; /*tamaño logo, ancho de un elemento*/
                 border-radius: 100%; /*borde de logo*/
+                }
             }
             .navbar-toggler{
                 background-color:grey; /*color icono menú hamburguesa*/

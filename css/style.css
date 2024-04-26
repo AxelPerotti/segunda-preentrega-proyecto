@@ -18,9 +18,9 @@ header {
   display: flex; /*alineación cajas*/
   margin: 4%; /*margen entre header y main*/
 }
-header nav div img {
+header nav div a img {
+  width: 25%; /*tamaño logo, ancho de un elemento*/
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8)); /*sombra logo*/
-  width: 10%; /*tamaño logo, ancho de un elemento*/
   border-radius: 100%; /*borde de logo*/
 }
 header nav div .navbar-toggler {
@@ -159,7 +159,7 @@ footer {
 /*MQ tablet*/
 @media screen and (min-width: 600px) {
   body main .section-galeria div p {
-    font-size: small;
+    font-size: medium;
   }
 }
 /*MQ desktop*/
@@ -179,7 +179,7 @@ footer {
     width: 95%;
   }
   body main .section-galeria div p {
-    font-size: medium;
+    font-size: large;
   }
 }
 
