@@ -15,9 +15,12 @@ main{
         color: grey;
         font-style: italic;
     }   
-    .img-pan-casero{ /*RECIPES*/
-        border-radius: 10px; /*bordes*/
-        width: 50%; /*tamaño, ancho*/
+    .div-img-pan-casero{
+        align-items: center;
+        .img-pan-casero{ /*RECIPES*/
+            border-radius: 10px; /*bordes*/
+            width: 50%; /*tamaño, ancho*/
+        }
     }
     .img-torta-matera{ /*RECIPES*/
         border-radius: 10px; /*bordes*/

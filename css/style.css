@@ -74,7 +74,10 @@ main .sub-prod-utilizados { /*SUBTITLE H4 PROD*/
   color: grey;
   font-style: italic;
 }
-main .img-pan-casero { /*RECIPES*/
+main .div-img-pan-casero {
+  align-items: center;
+}
+main .div-img-pan-casero .img-pan-casero { /*RECIPES*/
   border-radius: 10px; /*bordes*/
   width: 50%; /*tamaño, ancho*/
 }
