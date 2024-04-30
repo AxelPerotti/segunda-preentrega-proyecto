@@ -75,15 +75,24 @@ main .sub-prod-utilizados { /*SUBTITLE H4 PROD*/
   font-style: italic;
 }
 main .div-img-pan-casero {
-  align-items: center;
+  display: flex;
+  justify-content: center;
 }
-main .div-img-pan-casero .img-pan-casero { /*RECIPES*/
+main .div-img-pan-casero img { /*RECIPES*/
   border-radius: 10px; /*bordes*/
-  width: 50%; /*tamaño, ancho*/
+  width: 70%;
 }
-main .img-torta-matera { /*RECIPES*/
+main .div-img-torta-matera {
+  display: flex;
+  justify-content: center;
+}
+main .div-img-torta-matera img { /*RECIPES*/
   border-radius: 10px; /*bordes*/
-  width: 50%; /*tamaño, ancho*/
+  width: 70%; /*tamaño, ancho*/
+}
+main ul .item-contacto a {
+  text-decoration: none;
+  color: black;
 }
 main p { /*GALLERY,RECIPES*/
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /*tipografía*/

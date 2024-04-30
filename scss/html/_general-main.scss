@@ -16,15 +16,28 @@ main{
         font-style: italic;
     }   
     .div-img-pan-casero{
-        align-items: center;
-        .img-pan-casero{ /*RECIPES*/
+        display: flex;
+        justify-content: center;
+        img{ /*RECIPES*/
             border-radius: 10px; /*bordes*/
-            width: 50%; /*tamaño, ancho*/
+            width: 70%;
         }
     }
-    .img-torta-matera{ /*RECIPES*/
+    .div-img-torta-matera{
+        display: flex;
+        justify-content: center;
+        img{ /*RECIPES*/
         border-radius: 10px; /*bordes*/
-        width: 50%; /*tamaño, ancho*/
+        width: 70%; /*tamaño, ancho*/
+        }
+    }
+    ul{
+        .item-contacto{
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
     }
     p { /*GALLERY,RECIPES*/
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; /*tipografía*/
