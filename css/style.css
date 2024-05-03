@@ -56,107 +56,74 @@ header nav div div ul li ul li a:hover { /*pasar cursor por encima*/
   border-radius: 5px; /*bordes redondeados*/
 }
 
-/*Main styles*/
 main {
   margin: 1rem;
 }
-main h1 { /*TITLE*/
-  text-align: center; /*alineación*/
-  font-family: "Courier New", Courier, monospace; /*tipografía*/
-  font-weight: 900; /*grosor letra*/
-  font-size: xx-large; /*tamaño letra*/
-  color: brown; /*color letra*/
+main h1 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+  font-size: xx-large;
+  color: brown;
 }
-main .sub-prod-utilizados { /*SUBTITLE H4 PROD*/
-  text-align: center; /*alineación texto*/
-  font-size: large; /*tamaño letra*/
+main .sub-prod-utilizados {
+  text-align: center;
+  font-size: large;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: grey;
   font-style: italic;
 }
-main .div-img-pan-casero {
-  display: flex;
-  justify-content: center;
-}
-main .div-img-pan-casero img { /*RECIPES*/
-  border-radius: 10px; /*bordes*/
-  width: 70%;
-}
+main .div-img-pan-casero,
 main .div-img-torta-matera {
   display: flex;
   justify-content: center;
 }
-main .div-img-torta-matera img { /*RECIPES*/
-  border-radius: 10px; /*bordes*/
-  width: 70%; /*tamaño, ancho*/
+main .div-img-pan-casero img,
+main .div-img-torta-matera img {
+  border-radius: 10px;
+  width: 70%;
 }
 main ul .item-contacto a {
   text-decoration: none;
   color: black;
 }
-main p { /*GALLERY,RECIPES*/
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /*tipografía*/
-  font-style: italic; /*modifica texto*/
-  text-align: center; /*alineación texto*/
+main p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  text-align: center;
 }
-main .ul-torta-matera { /*DISORDERED ITEMS*/
+main .ul-torta-matera {
   padding: 10px 0px 20px 20px;
 }
-main .ol-torta-matera { /*ORDERED ITEMS*/
+main .ol-torta-matera {
   padding: 10px 20px 20px 20px;
 }
-main .ul-pan-casero { /*DISORDERED ITEMS*/
+main .ul-pan-casero {
   padding: 10px 0px 20px 20px;
 }
-main .ol-pan-casero { /*ORDERED ITEMS*/
+main .ol-pan-casero {
   padding: 10px 20px 20px 20px;
 }
-main iframe { /*MAP*/
-  width: 80%; /*tamaño, ancho de un elemento*/
+main iframe {
+  width: 80%;
 }
 main .section-index {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-main .section-galeria {
-  display: grid;
-  grid-template-columns: 1fr;
+main .section-index div {
+  flex: 1 1 30%;
+  margin: 10px;
 }
-main .section-galeria div p {
-  font-size: x-small;
+main .section-index div img {
+  width: 100%;
+  height: auto;
 }
-main .section-galeria div img {
-  width: 85%;
-}
-main section {
-  text-align: center; /*alineación de imagenes*/ /*CAMBIAR A ALIGN ITEMS*/
-}
-main section div {
-  margin: 20px; /*INDEX Y GALLERY*/
-}
-main section div .frutal { /*CLASS INDEX*/
-  text-decoration: underline; /*linea debajo texto*/
-  font-weight: 500; /*grosor letra*/
-}
-main section div .cumple { /*CLASS INDEX*/
-  text-decoration: underline; /*linea debajo texto*/
-  font-weight: 500; /*grosor letra*/
-}
-main section div .materas { /*CLASS INDEX*/
-  text-decoration: underline; /*linea debajo texto*/
-  font-weight: 500; /*grosor letra*/
-}
-main section div img { /*INDEX, GALLERY*/
-  width: 50%; /*ancho de un elemento*/
-  width: 80%; /*tamaño img, ancho de un elemento*/
-  margin: 10px; /*margen*/
-}
-main div div div div h5 {
-  text-align: center;
-}
-main div div div div div h5 {
-  text-align: center;
+@media (max-width: 600px) {
+  main .section-index {
+    flex-direction: column;
+  }
 }
 
 /*Footer styles*/
@@ -167,16 +134,17 @@ footer {
   text-align: right; /*alineacion del texto*/
 }
 
-/*Media Querys*/
-/*MQ tablet*/
+/* Media Queries */
+/* MQ tablet */
 @media screen and (min-width: 600px) {
   body main .section-galeria div p {
     font-size: medium;
   }
 }
-/*MQ desktop*/
+/* MQ desktop */
 @media screen and (min-width: 1024px) {
   .section-index {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
   }
@@ -185,6 +153,7 @@ footer {
     height: 80vh;
   }
   .section-galeria {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
   body main .section-galeria div img {

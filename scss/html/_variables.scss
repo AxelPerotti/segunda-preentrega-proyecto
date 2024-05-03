@@ -1,11 +1,13 @@
-//colores especificos
+// Variables de estilo
+// html/_variables.scss
 
-$color-titulos: brown;
+// Colores específicos para títulos y pie de página
+$color-titulos: brown; // Color principal de títulos
+$color-titulos-opcional: red; // Color opcional para títulos
+$color-titulos-opcional-2: blue; // Segundo color opcional para títulos
+$color-footer: black; // Color de texto para el pie de página
+$color-footer-opcional: grey; // Color opcional para el pie de página
 
-$color-titulos-opcional: red;
-
-$color-titulos-opcional-2: blue;
-
-$color-footer: black;
-
-$color-footer-opcional: grey
+// Puntos de quiebre
+$tablet-width: 600px; // Ancho de pantalla para tablets
+$desktop-width: 1024px; // Ancho de pantalla para pc

@@ -1,118 +1,83 @@
-/*Main styles*/
-main{
+// html/_general-main.scss
+
+main {
     margin: 1rem;
-    h1{/*TITLE*/
-        text-align: center; /*alineación*/
-        font-family:'Courier New', Courier, monospace; /*tipografía*/
-        font-weight: 900; /*grosor letra*/
-        font-size: xx-large; /*tamaño letra*/
-        color:brown; /*color letra*/
+
+    h1 {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 900;
+        font-size: xx-large;
+        color: brown;
     }
-    .sub-prod-utilizados { /*SUBTITLE H4 PROD*/
-        text-align: center; /*alineación texto*/
-        font-size: large; /*tamaño letra*/
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    .sub-prod-utilizados {
+        text-align: center;
+        font-size: large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: grey;
         font-style: italic;
-    }   
-    .div-img-pan-casero{
+    }
+
+    .div-img-pan-casero,
+    .div-img-torta-matera {
         display: flex;
         justify-content: center;
-        img{ /*RECIPES*/
-            border-radius: 10px; /*bordes*/
+
+        img {
+            border-radius: 10px;
             width: 70%;
         }
     }
-    .div-img-torta-matera{
+
+    ul .item-contacto a {
+        text-decoration: none;
+        color: black;
+    }
+
+    p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .ul-torta-matera {
+        padding: 10px 0px 20px 20px;
+    }
+
+    .ol-torta-matera {
+        padding: 10px 20px 20px 20px;
+    }
+
+    .ul-pan-casero {
+        padding: 10px 0px 20px 20px;
+    }
+
+    .ol-pan-casero {
+        padding: 10px 20px 20px 20px;
+    }
+
+    iframe {
+        width: 80%;
+    }
+
+    .section-index {
         display: flex;
-        justify-content: center;
-        img{ /*RECIPES*/
-        border-radius: 10px; /*bordes*/
-        width: 70%; /*tamaño, ancho*/
-        }
-    }
-    ul{
-        .item-contacto{
-            a{
-                text-decoration: none;
-                color: black;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        div {
+            flex: 1 1 30%;
+            margin: 10px;
+
+            img {
+                width: 100%;
+                height: auto;
             }
         }
-    }
-    p { /*GALLERY,RECIPES*/
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; /*tipografía*/
-        font-style: italic; /*modifica texto*/
-        text-align: center; /*alineación texto*/
-    }
-    .ul-torta-matera{ /*DISORDERED ITEMS*/
-        padding: 10px 0px 20px 20px;
-    }
-    .ol-torta-matera{ /*ORDERED ITEMS*/
-        padding: 10px 20px 20px 20px;
-    }
-    .ul-pan-casero { /*DISORDERED ITEMS*/
-        padding: 10px 0px 20px 20px;
-    }
-    .ol-pan-casero{ /*ORDERED ITEMS*/
-        padding: 10px 20px 20px 20px;
-    }
-    iframe { /*MAP*/
-        width: 80%; /*tamaño, ancho de un elemento*/
-    }
-    .section-index{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
-    .section-galeria{
-        display: grid;
-        grid-template-columns: 1fr;
-        div{
-            p{
-                font-size:x-small;
-            }
-            img{
-                width: 85%
-            }
+
+        @media (max-width: $tablet-width) {
+            flex-direction: column;
         }
     }
-    section{
-        text-align: center; /*alineación de imagenes*/ /*CAMBIAR A ALIGN ITEMS*/
-        div{
-            margin: 20px; /*INDEX Y GALLERY*/
-            .frutal { /*CLASS INDEX*/
-                text-decoration: underline; /*linea debajo texto*/
-                font-weight: 500; /*grosor letra*/
-            }
-            .cumple { /*CLASS INDEX*/
-                text-decoration: underline; /*linea debajo texto*/
-                font-weight: 500; /*grosor letra*/
-            }
-            .materas { /*CLASS INDEX*/
-                text-decoration: underline; /*linea debajo texto*/
-                font-weight: 500; /*grosor letra*/
-            }
-            img { /*INDEX, GALLERY*/
-                width: 50%; /*ancho de un elemento*/
-                width: 80%; /*tamaño img, ancho de un elemento*/
-                margin: 10px; /*margen*/
-            }          
-        }
-    }
-    div{
-        div{
-            div{
-                div{
-                    h5{
-                        text-align: center /*centrar texto*/
-                    }
-                    div{
-                        h5{
-                            text-align: center /*centrar texto*/
-                        }
-                    }
-                }
-            }
-        }
-    }       
 }

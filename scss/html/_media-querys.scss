@@ -1,30 +1,39 @@
-/*Media Querys*/
+/* Media Queries */
+// html/_media-querys.scss
 
-/*MQ tablet*/
-@media screen and (min-width: 600px){
-    body main .section-galeria div p{
-        font-size:medium;
-    }   
+$tablet-width: 600px; // Ancho para tabletas
+$desktop-width: 1024px; // Ancho para escritorios
+
+/* MQ tablet */
+@media screen and (min-width: $tablet-width) {
+    body main .section-galeria div p {
+        font-size: medium; // Tamaño de fuente medio para tablets
+    }
 }
 
-/*MQ desktop*/
-@media screen and (min-width: 1024px){
-    .section-index{
-        grid-template-columns: repeat(3, 1fr);
+/* MQ desktop */
+@media screen and (min-width: $desktop-width) {
+    .section-index {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); // Tres columnas iguales
         grid-template-rows: 1fr;
     }
-    main section div img{
+
+    main section div img {
         width: 80vh;
-        height: 80vh;
-    }
-    .section-galeria{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    body main .section-galeria div img{
-        width: 95%
-    }
-    body main .section-galeria div p{
-        font-size:large;
+        height: 80vh; // Imágenes grandes en escritorio
     }
 
+    .section-galeria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); // Galería en tres columnas
+    }
+
+    body main .section-galeria div img {
+        width: 95%; // Ancho de imagen en galería
+    }
+
+    body main .section-galeria div p {
+        font-size: large; // Tamaño de fuente grande para escritorio
+    }
 }
